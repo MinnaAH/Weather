@@ -1,22 +1,118 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+h1{
+  text-align: center;
+  font-family: "Playfair Display";
+}
+
+h2{
+  font-family: "Playfair Display";
+}
+h3{
+  font-family: "Playfair Display";
+}
+
+/*Searc form*/
+.search{
+  display: flex;
+  flex-direction: row;
+}
+.form{
+  width:100%;
+  text-align: center;
+}
+.input{
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px 32px;
+  margin: auto 2% auto 2%;
+  width: 90%;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.button{
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 32px;
+  margin: 2% 1% auto 1%;
+}
+
+/*Weather Data*/
+.weatherData{
+  max-width: 100%;
+  text-align: center;
+  margin: 0 2% auto 2%;
+}
+.locationInfo{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+}
+.weather{
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+/*Saved buttons*/
+.saved{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 3%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.savedButton{
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 2%;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*Tablet portrait*/
+@media screen and (min-width: 768px) and (max-width:1023px){
+  .savedButton{
+    width: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 0;
+  }
+}
+/*Tablet landscape*/
+@media screen and (min-width: 1024px) and (max-width:1199px){
+  .weather{
+    grid-template-columns: auto auto auto;
+  }
+  .locationInfo{
+    text-align: left;
+    margin-left: 2%;
+  }
+  .savedButton{
+    width: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 0;
+  }
 }
 
-.App-link {
-  color: #09d3ac;
+/*Desktop*/
+@media screen and (min-width: 1200px){
+  .weather{
+    grid-template-columns: auto auto auto;
+  }
+  .locationInfo{
+    text-align: left;
+    margin-left: 2%;
+  }
+  .savedButton{
+    width: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 0;
+  }
 }
